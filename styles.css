@@ -1,0 +1,41 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    background: rgb(189,224,254);
+    background: radial-gradient(circle, rgba(189,224,254,0.8044467787114846) 0%, rgba(72,191,227,1) 100%);
+}
+
+#header {
+    display: flex;
+}
+
+#copyright-box {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+}
+
+#welcome-box {
+    width: 50% ;
+    text-align: center;
+    background: aliceblue;
+    border: thick double #32a1ce;
+}
+
+#language-box {
+    width: 50% ;
+    text-align: center;
+    background: aliceblue;
+    border: thick double #32a1ce;
+}
+
+#language-links a {
+    text-decoration: none;
+    color: blue;
+    margin: 0 5px;
+}
+
+#language-links a:hover {
+    text-decoration: underline;
+}

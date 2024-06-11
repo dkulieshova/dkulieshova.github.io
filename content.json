@@ -1,0 +1,14 @@
+{
+    "uk": {
+    "title": "Welcome to the Portfolio project",
+        "description": "Select your language:"
+},
+    "ua": {
+    "title": "Вітаємо на сторінці проєкту Портфоліо",
+        "description": "Оберіть мову:"
+},
+    "fr": {
+    "title": "Bienvenue sur la page du projet Portfolio",
+        "description": "Sélectionnez votre langue :"
+}
+}

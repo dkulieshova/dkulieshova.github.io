@@ -1,11 +1,28 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <title>Portfolio</title>
-  </head>
-  <body>
-    <div>
-      <h1>Hello World ! Portfolio</h1>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title id="page-title">Language Switcher Example</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="header">
+    <div id="welcome-box">
+        <h1 id="title">Welcome</h1>
     </div>
-  </body>
+    <div id="language-box">
+        <p id="description">Language</p>
+        <div id="language-links">
+            <a href="#" onclick="changeLanguage('uk')" id="link-uk">UK</a> |
+            <a href="#" onclick="changeLanguage('ua')" id="link-ua">UA</a> |
+            <a href="#" onclick="changeLanguage('fr')" id="link-fr">FR</a>
+        </div>
+    </div>
+    </div>
+    <div id="copyright-box">
+        <p>Daria Kulieshova © 2024</p>
+    </div>
+<script src="script.js"></script>
+</body>
 </html>

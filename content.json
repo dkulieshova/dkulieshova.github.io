@@ -19,6 +19,9 @@
         "description": "Sélectionnez votre langue :",
         "name": "Daria Kulieshova",
         "cours": "Ingénieure spécialité Informatique 2ᵉ année, apprentissage",
-        "mail": "Adresse mail :"
-}
+        "mail": "Adresse mail :",
+        "education-title": "Formation",
+        "languages-title": "Langages de programmation",
+        "video-title": "Petite vidéo avec les sous-titres"
+    }
 }

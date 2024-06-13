@@ -1,77 +1,88 @@
 body {
-    font-family: Arial, sans-serif;
-    margin: 20px;
-    background-color: aliceblue;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f3f4f6;
+    color: #333;
 }
 
 #header {
     display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #1f2937;
+    padding: 20px;
+    color: #1f2937;
 }
 
 #content-box {
-    display: block;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
 }
 
-#copyright-box {
-    position: relative;
-    bottom: 0;
-    width: 100%;
+#welcome-box, #language-box {
+    flex: 1;
     text-align: center;
-}
-
-#welcome-box {
-    width: 50% ;
-    text-align: center;
-    background-color: #cdb4db;
-    border: 2px solid black;
+    padding: 20px;
+    margin: 10px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
 }
 
 #language-box {
-    width: 50% ;
-    text-align: center;
-    background: aliceblue;
-    border: 2px solid black;
+    background-color: #f9fafb;
 }
 
 #language-links a {
     text-decoration: none;
-    color: blue;
-    margin: 0 5px;
+    color: #3b82f6;
+    margin: 0 10px;
+    transition: color 0.3s ease;
 }
 
 #language-links a:hover {
-    text-decoration: underline;
+    color: #2563eb;
 }
 
 table {
-    border-spacing: 20px;
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0;
+    margin-top: 20px;
 }
 
 th, td {
-    border: 1px solid white;
-    border-radius: 5px;
-    padding: 10px;
-}
-
-th {
-    background: aliceblue;
+    padding: 12px 15px;
+    border-bottom: 1px solid #e5e7eb;
 }
 
 td:hover {
     background: linear-gradient(#ffafcc, #ffc8dd);
 }
 
+th {
+    background-color: #f9fafb;
+    text-align: center;
+}
+
+tr:hover td {
+    background-color: #f3f4f6;
+}
+
 .title {
-    font: italic bold 1.4rem "Fira Sans", serif;
+    font-weight: bold;
+    font-size: 1.5rem;
     text-align: center;
     width: 100%;
-    padding-top: 5px;
-    padding-bottom: 5px;
-    margin-top: 20px;
-    background: rgb(189,224,254);
-    background: radial-gradient(circle, rgba(189,224,254,0.8044467787114846) 0%, rgba(72,191,227,1) 100%);
-    /*background-color: #cdb4db;*/
-    border: 2px solid black;
+    padding: 10px;
+    margin: 20px 0;
+    background-color: #60a5fa;
+    color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
 }
 
 .content {
@@ -80,6 +91,22 @@ td:hover {
 }
 
 .information {
-    font: italic 1.4rem "Fira Sans", serif;
+    font-style: italic;
+    font-size: 1.2rem;
     width: 100%;
+}
+
+#video-box {
+    margin-bottom: 50px;
+}
+
+#copyright-box {
+    text-align: center;
+    padding: 5px;
+    background-color: #1f2937;
+    color: white;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    box-shadow: 0 -2px 5px rgba(0,0,0,0.1);
 }

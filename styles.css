@@ -1,16 +1,19 @@
 body {
     font-family: Arial, sans-serif;
     margin: 20px;
-    background: rgb(189,224,254);
-    background: radial-gradient(circle, rgba(189,224,254,0.8044467787114846) 0%, rgba(72,191,227,1) 100%);
+    background-color: aliceblue;
 }
 
 #header {
     display: flex;
 }
 
+#content-box {
+    display: block;
+}
+
 #copyright-box {
-    position: absolute;
+    position: relative;
     bottom: 0;
     width: 100%;
     text-align: center;
@@ -19,15 +22,15 @@ body {
 #welcome-box {
     width: 50% ;
     text-align: center;
-    background: aliceblue;
-    border: thick double #32a1ce;
+    background-color: #cdb4db;
+    border: 2px solid black;
 }
 
 #language-box {
     width: 50% ;
     text-align: center;
     background: aliceblue;
-    border: thick double #32a1ce;
+    border: 2px solid black;
 }
 
 #language-links a {
@@ -38,4 +41,45 @@ body {
 
 #language-links a:hover {
     text-decoration: underline;
+}
+
+table {
+    border-spacing: 20px;
+}
+
+th, td {
+    border: 1px solid white;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+th {
+    background: aliceblue;
+}
+
+td:hover {
+    background: linear-gradient(#ffafcc, #ffc8dd);
+}
+
+.title {
+    font: italic bold 1.4rem "Fira Sans", serif;
+    text-align: center;
+    width: 100%;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-top: 20px;
+    background: rgb(189,224,254);
+    background: radial-gradient(circle, rgba(189,224,254,0.8044467787114846) 0%, rgba(72,191,227,1) 100%);
+    /*background-color: #cdb4db;*/
+    border: 2px solid black;
+}
+
+.content {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.information {
+    font: italic 1.4rem "Fira Sans", serif;
+    width: 100%;
 }

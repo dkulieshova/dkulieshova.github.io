@@ -1,14 +1,24 @@
 {
     "uk": {
     "title": "Welcome to the Portfolio project",
-        "description": "Select your language:"
+        "description": "Select your language:",
+        "name": "Daria Kulieshova",
+        "cours": "Ingénieure spécialité Informatique 2ᵉ année, apprentissage",
+        "mail": "E-mail:"
 },
     "ua": {
     "title": "Вітаємо на сторінці проєкту Портфоліо",
-        "description": "Оберіть мову:"
+        "description": "Оберіть мову:",
+        "name": "Дар'я Кулєшова",
+        "cours": "Інженерка за спеціальністю Інформатика 2 рік навчання в статусі апренті",
+        "mail": "Електронна пошта:"
+
 },
     "fr": {
     "title": "Bienvenue sur la page du projet Portfolio",
-        "description": "Sélectionnez votre langue :"
+        "description": "Sélectionnez votre langue :",
+        "name": "Daria Kulieshova",
+        "cours": "Ingénieure spécialité Informatique 2ᵉ année, apprentissage",
+        "mail": "Adresse mail :"
 }
 }

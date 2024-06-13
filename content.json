@@ -1,18 +1,91 @@
 {
-    "uk": {
+    "en": {
     "title": "Welcome to the Portfolio project",
         "description": "Select your language:",
         "name": "Daria Kulieshova",
-        "cours": "Ingénieure spécialité Informatique 2ᵉ année, apprentissage",
-        "mail": "E-mail:"
+        "cours": "Second-year Computer Science Engineering student, apprenticeship program",
+        "mail": "E-mail:",
+        "education": "Education & Job",
+        "languages": "Programming languages",
+        "video": "Short video with subtitles",
+        "table": {
+            "header": {
+                "establishment": "Establishment",
+                "details": "Details",
+                "country": "Country",
+                "years": "Years"
+            },
+            "rows": [
+                {
+                    "establishment": "Oalia",
+                    "details": "Apprentice Java Developer",
+                    "country": "France",
+                    "years": "2022 - present"
+                },
+                {
+                    "establishment": "Sup Galilée Engineering School",
+                    "details": "2nd year engineering student specializing in Computer Science",
+                    "country": "France",
+                    "years": "2022 - present"
+                },
+                {
+                    "establishment": "National Technical University 'Kharkiv Polytechnic Institute'",
+                    "details": "Bachelor's in Computer Science and Intelligent Systems",
+                    "country": "Ukraine",
+                    "years": "2019 - 2023"
+                },
+                {
+                    "establishment": "Kharkiv Physical and Mathematical Lyceum",
+                    "details": "High school diploma, graduated with honors in 2019",
+                    "country": "Ukraine",
+                    "years": "-"
+                }
+            ]
+        }
 },
     "ua": {
     "title": "Вітаємо на сторінці проєкту Портфоліо",
         "description": "Оберіть мову:",
         "name": "Дар'я Кулєшова",
         "cours": "Інженерка за спеціальністю Інформатика 2 рік навчання в статусі апренті",
-        "mail": "Електронна пошта:"
-
+        "mail": "Електронна пошта:",
+        "education": "Навчання & Робота",
+        "languages": "Мови програмування",
+        "video": "Коротеньке відео з субтитрами",
+        "table": {
+            "header": {
+                "establishment": "Заклад",
+                "details": "Деталі",
+                "country": "Країна",
+                "years": "Роки"
+            },
+            "rows": [
+                {
+                    "establishment": "Oalia",
+                    "details": "Стажерка, Java-розробниця",
+                    "country": "Франція",
+                    "years": "2022 - нинішній час"
+                },
+                {
+                    "establishment": "Інженерна школа Sup Galilée",
+                    "details": "2-й рік навчання на інженера, спеціалізація Комп'ютерні науки",
+                    "country": "Франція",
+                    "years": "2022 - нинішній час"
+                },
+                {
+                    "establishment": "Національний технічний університет 'Харківський політехнічний інститут'",
+                    "details": "Бакалавр з Комп'ютерних наук та інтелектуальних систем",
+                    "country": "Україна",
+                    "years": "2019 - 2023"
+                },
+                {
+                    "establishment": "Харківський фізико-математичний ліцей",
+                    "details": "Атестат про середню освіту, закінчила з відзнакою у 2019 році",
+                    "country": "Україна",
+                    "years": "-"
+                }
+            ]
+        }
 },
     "fr": {
     "title": "Bienvenue sur la page du projet Portfolio",
@@ -20,8 +93,42 @@
         "name": "Daria Kulieshova",
         "cours": "Ingénieure spécialité Informatique 2ᵉ année, apprentissage",
         "mail": "Adresse mail :",
-        "education-title": "Formation",
-        "languages-title": "Langages de programmation",
-        "video-title": "Petite vidéo avec les sous-titres"
+        "education": "Formation & Travail",
+        "languages": "Langages de programmation",
+        "video": "Petite vidéo avec les sous-titres",
+        "table": {
+            "header": {
+                "establishment": "Etablissement",
+                "details": "Détails",
+                "country": "Pays",
+                "years": "Années"
+            },
+            "rows": [
+                {
+                    "establishment": "Oalia",
+                    "details": "Apprentie Developpeuse Java",
+                    "country": "France",
+                    "years": "2022 - présent"
+                },
+                {
+                    "establishment": "Ecole d'ingénieurs Sup Galilée",
+                    "details": "2ème année d'ingénieur à la spécialité Informatique",
+                    "country": "France",
+                    "years": "2022 - présent"
+                },
+                {
+                    "establishment": "Université technique nationale «Institut polytechnique de Kharkiv»",
+                    "details": "Licence en Informatique et systèmes intellectuels",
+                    "country": "Ukraine",
+                    "years": "2019 - 2023"
+                },
+                {
+                    "establishment": "Lycée physique et mathématiques de Kharkiv",
+                    "details": "Baccalauréat, diplômé en 2019 avec mention",
+                    "country": "Ukraine",
+                    "years": "-"
+                }
+            ]
+        }
     }
 }

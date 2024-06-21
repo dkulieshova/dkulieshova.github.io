@@ -1,100 +1,100 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="fr" vocab="http://schema.org/" typeof="WebPage">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title id="page-title">Language Switcher Example</title>
+    <title id="page-title" property="name">Language Switcher Example</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div id="header">
+<div id="header" typeof="WPHeader">
     <div id="welcome-box">
-        <h1 id="title">Bienvenue sur la page du projet Portfolio</h1>
+        <h1 id="title" property="headline">Bienvenue sur la page du projet Portfolio</h1>
     </div>
     <div id="language-box">
-        <p id="description">Sélectionnez votre langue :</p>
+        <p id="description" property="description">Sélectionnez votre langue :</p>
         <div id="language-links">
             <a href="#" onclick="changeLanguage('en')" id="link-uk">GB</a> |
             <a href="#" onclick="changeLanguage('ua')" id="link-ua">UA</a> |
             <a href="#" onclick="changeLanguage('fr')" id="link-fr">FR</a>
         </div>
     </div>
-    </div>
-    <div id="content-box">
-        <div class="box" id="information-box">
-            <div class="information">
-                <p id="name">Daria Kulieshova</p>
-                <p id="cours"></p>
-                <span id="mail"></span>
-                <a href="mailto:dariakulieshova@gmail.com?subject=Questions" title="">dariakulieshova@gmail.com</a>
-            </div>
-        </div>
-        <div class="box" id="education-box">
-            <div class="title" id="education-title"></div>
-            <div class="content" id="education-content">
-                <table>
-                    <tr>
-                        <th>Etablissement</th>
-                        <th>Détails</th>
-                        <th>Pays</th>
-                        <th>Années</th>
-                    </tr>
-                    <tr>
-                        <td>Oalia</td>
-                        <td>Apprentie Developpeuse Java</td>
-                        <td>France</td>
-                        <td>2022 - présent</td>
-                    </tr>
-                    <tr>
-                        <td>Ecole d'ingénieurs Sup Galilée</td>
-                        <td>2ème année d'ingénieur à la spécialité Informatique</td>
-                        <td>France</td>
-                        <td>2022 - présent</td>
-                    </tr>
-                    <tr>
-                        <td>Université technique nationale «Institut polytechnique de Kharkiv»</td>
-                        <td>Licence en Informatique et systèmes intellectuels</td>
-                        <td>Ukraine</td>
-                        <td>2019 - 2023</td>
-                    </tr>
-                    <tr>
-                        <td>Lycée physique et mathématiques de Kharkiv</td>
-                        <td>Baccalauréat, diplômé en 2019 avec mention</td>
-                        <td>Ukraine</td>
-                        <td>-</td>
-                    </tr>
-                </table>
-            </div>
-        </div>
-        <div class="box" id="languages-box">
-            <div class="title" id="languages-title"></div>
-            <div id="languages-content">
-                <ul>
-                    <li>C/C++/C#</li>
-                    <li>Python</li>
-                    <li>Java</li>
-                    <li>PHP</li>
-                    <li>SQL</li>
-                    <li>MATLAB</li>
-                </ul>
-            </div>
-        </div>
-        <div class="box" id="video-box">
-            <div class="title" id="video-title"></div>
-            <div class="content" id="video-content">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/UMWZOVlWjk0?si=6jYVHtVU3sBMIH0-"
-                        title="YouTube video player"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                        referrerpolicy="strict-origin-when-cross-origin"
-                        allowfullscreen
-                        style="border: 0;">
-                </iframe>
-            </div>
+</div>
+<div id="content-box">
+    <div class="box" id="information-box" typeof="Person">
+        <div class="information">
+            <p id="name" property="name">Daria Kulieshova</p>
+            <p id="cours" property="affiliation"></p>
+            <span id="mail" property="email"></span>
+            <a href="mailto:dariakulieshova@gmail.com?subject=Questions" title="" property="email">dariakulieshova@gmail.com</a>
         </div>
     </div>
-    <div id="copyright-box">
-        <p>Daria Kulieshova © 2024</p>
+    <div class="box" id="education-box" typeof="EducationalOccupationalCredential">
+        <div class="title" id="education-title"></div>
+        <div class="content" id="education-content">
+            <table>
+                <tr>
+                    <th>Etablissement</th>
+                    <th>Détails</th>
+                    <th>Pays</th>
+                    <th>Années</th>
+                </tr>
+                <tr typeof="EducationalOrganization">
+                    <td property="name">Oalia</td>
+                    <td property="description">Apprentie Developpeuse Java</td>
+                    <td property="location">France</td>
+                    <td property="startDate" content="2022">2022 - présent</td>
+                </tr>
+                <tr typeof="EducationalOrganization">
+                    <td property="name">Ecole d'ingénieurs Sup Galilée</td>
+                    <td property="description">2ème année d'ingénieur à la spécialité Informatique</td>
+                    <td property="location">France</td>
+                    <td property="startDate" content="2022">2022 - présent</td>
+                </tr>
+                <tr typeof="EducationalOrganization">
+                    <td property="name">Université technique nationale «Institut polytechnique de Kharkiv»</td>
+                    <td property="description">Licence en Informatique et systèmes intellectuels</td>
+                    <td property="location">Ukraine</td>
+                    <td property="startDate" content="2019">2019 - 2023</td>
+                </tr>
+                <tr typeof="EducationalOrganization">
+                    <td property="name">Lycée physique et mathématiques de Kharkiv</td>
+                    <td property="description">Baccalauréat, diplômé en 2019 avec mention</td>
+                    <td property="location">Ukraine</td>
+                    <td>-</td>
+                </tr>
+            </table>
+        </div>
     </div>
+    <div class="box" id="languages-box">
+        <div class="title" id="languages-title"></div>
+        <div id="languages-content">
+            <ul>
+                <li property="knowsLanguage">C/C++/C#</li>
+                <li property="knowsLanguage">Python</li>
+                <li property="knowsLanguage">Java</li>
+                <li property="knowsLanguage">PHP</li>
+                <li property="knowsLanguage">SQL</li>
+                <li property="knowsLanguage">MATLAB</li>
+            </ul>
+        </div>
+    </div>
+    <div class="box" id="video-box">
+        <div class="title" id="video-title"></div>
+        <div class="content" id="video-content">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/UMWZOVlWjk0?si=6jYVHtVU3sBMIH0-"
+                    title="YouTube video player"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin"
+                    allowfullscreen
+                    style="border: 0;">
+            </iframe>
+        </div>
+    </div>
+</div>
+<div id="copyright-box">
+    <p>Daria Kulieshova © 2024</p>
+</div>
 <script src="script.js"></script>
 </body>
 </html>

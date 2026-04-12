@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quest 🎬</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gradient-to-br from-purple-100 to-pink-100 min-h-screen flex items-center justify-center">
+
+<div class="bg-white p-6 rounded-2xl shadow-xl max-w-xl w-full text-center">
+  <h1 class="text-xl font-semibold mb-4">Завдання 1 🎯</h1>
+
+  <video id="video" controls class="rounded-xl mb-4 w-full shadow">
+    <source src="videos/1.mp4" type="video/mp4">
+  </video>
+
+  <input id="answer" placeholder="Твоя відповідь..."
+    class="w-full p-2 border rounded mb-4" />
+
+  <button onclick="checkAnswer()"
+    class="bg-green-500 text-white px-4 py-2 rounded hover:bg-green-600 transition">
+    Відповісти
+  </button>
+</div>
+
+<script>
+if (!localStorage.getItem('auth')) {
+  window.location.href = 'index.html';
+}
+
+function checkAnswer() {
+  const correct = 'кіт';
+  const input = document.getElementById('answer').value.toLowerCase();
+
+  if (input === correct) {
+    window.location.href = 'final.html';
+  } else {
+    alert('Не зовсім 😉 Спробуй ще');
+  }
+}
+</script>
+
+</body>
+</html>

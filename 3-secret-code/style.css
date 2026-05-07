@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* Скляна панель для гри */
+.glass-panel {
+    background: rgba(255, 255, 255, 0.4);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+.cards {
+    height: 450px;
+    width: 450px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 12px; /* Додав проміжки між картками */
+}
+
+.cards .card {
+    cursor: pointer;
+    list-style: none;
+    position: relative;
+    perspective: 1000px;
+    transform-style: preserve-3d;
+    /* Розрахунок розміру з урахуванням gap */
+    height: calc(100% / 4 - 10px);
+    width: calc(100% / 4 - 10px);
+}
+
+.card .view {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    border-radius: 12px;
+    /* Ніжний біло-блакитний фон з легким градієнтом */
+    background: linear-gradient(135deg, #ffffff 0%, #f0f7ff 100%);
+    pointer-events: none;
+    backface-visibility: hidden;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+    transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    border: 1px solid rgba(0, 0, 0, 0.05); /* Тонка рамка для чіткості */
+}
+
+.card .front-view {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Стилізація іконки знака питання */
+.card .front-view img {
+    width: 24px; /* Трохи більший розмір */
+    filter: invert(34%) sepia(91%) saturate(2713%) hue-rotate(221deg) brightness(101%) contrast(105%);
+    /* Цей фільтр робить SVG іконку насичено-синьою (#2563eb) */
+}
+
+.card .back-view {
+    transform: rotateY(-180deg);
+    padding: 10px;
+}
+
+.card .back-view img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+/* Анімація перевороту */
+.card.flip .back-view {
+    transform: rotateY(0);
+}
+.card.flip .front-view {
+    transform: rotateY(180deg);
+}
+
+/* Анімація помилки (трясіння) */
+.card.shake {
+    animation: shake 0.35s ease-in-out;
+}
+
+@keyframes shake {
+    0%, 100% { transform: translateX(0); }
+    20% { transform: translateX(-10px); }
+    40% { transform: translateX(10px); }
+    60% { transform: translateX(-5px); }
+    80% { transform: translateX(5px); }
+}
+
+/* Адаптивність */
+@media screen and (max-width: 500px) {
+    .cards {
+        height: 340px;
+        width: 340px;
+        gap: 8px;
+    }
+}

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quest 🎬</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gradient-to-br from-purple-100 to-pink-100 min-h-screen flex items-center justify-center p-4">
+
+  <div class="bg-white p-4 sm:p-8 rounded-3xl shadow-2xl max-w-4xl w-full text-center">
+
+<video
+  id="video1"
+  controls
+  class="rounded-2xl mb-6 w-full shadow-lg aspect-video object-cover"
+>
+  <source src="../videos/2.mp4" type="video/mp4">
+  Ваш браузер не підтримує відео.
+</video>
+
+<button
+  id="nextBtn"
+  onclick="playNextVideo()"
+  class="hidden px-6 py-3 bg-blue-600 text-white rounded-xl shadow-lg"
+>
+  Продовжити відтворення
+</button>
+
+<script>
+  const video = document.getElementById("video1");
+  const nextBtn = document.getElementById("nextBtn");
+
+  video.onended = function () {
+    nextBtn.classList.remove("hidden");
+  };
+
+  function playNextVideo() {
+    video.querySelector("source").src = "../videos/3.mp4";
+    video.load();
+    video.play();
+    nextBtn.classList.add("hidden");
+  }
+</script>
+  
+</div>
+
+<script>
+  function goNext() {
+    window.location.href = 'breaklock.html'
+  }
+</script>
+
+</body>
+</html>

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Кодовий замок 🔐</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet">
+  
+  <style>
+    body { font-family: 'Montserrat', sans-serif; }
+    
+    /* Стиль для цифр коду - моноширинний шрифт виглядає крутіше */
+    #codeDisplay {
+      font-family: 'JetBrains Mono', monospace;
+      letter-spacing: 0.5em;
+    }
+
+    /* Ефект для карток-кнопок */
+    .step-card {
+      transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    .step-card:hover {
+      transform: translateY(-5px);
+      filter: brightness(1.1);
+    }
+    .step-card:active {
+      transform: scale(0.95);
+    }
+
+    /* Скляний фон для всієї панелі */
+    .glass-panel {
+      background: rgba(255, 255, 255, 0.6);
+      backdrop-filter: blur(12px);
+      border: 1px solid rgba(255, 255, 255, 0.4);
+    }
+  </style>
+</head>
+
+<body class="bg-gradient-to-tr from-indigo-200 via-purple-200 to-pink-200 min-h-screen flex flex-col items-center justify-center p-6 text-slate-800">
+
+  <div class="text-center mb-10">
+    <h1 class="text-3xl font-extrabold mb-4 drop-shadow-sm text-gray-800">Твій секретний код 🔐</h1>
+    
+    <div class="glass-panel px-8 py-6 rounded-3xl shadow-xl inline-block border-b-4 border-indigo-400">
+      <p id="codeDisplay" class="text-4xl font-bold text-indigo-600">
+        _ _ _ _
+      </p>
+    </div>
+  </div>
+
+  <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 max-w-2xl w-full">
+  
+    <button onclick="go(0)" class="step-card group relative bg-indigo-600 p-6 rounded-2xl shadow-lg text-left overflow-hidden">
+        <div class="absolute right-[-10px] bottom-[-10px] text-6xl opacity-20 group-hover:rotate-12 transition-transform">1️⃣</div>
+        <h3 class="text-white font-bold text-lg mb-1">Крок перший</h3>
+        <p class="text-indigo-100/90 text-sm">У пошуках першої цифри...</p>
+    </button>
+
+    <button onclick="go(1)" class="step-card group relative bg-emerald-600 p-6 rounded-2xl shadow-lg text-left overflow-hidden">
+        <div class="absolute right-[-10px] bottom-[-10px] text-6xl opacity-20 group-hover:rotate-12 transition-transform">2️⃣</div>
+        <h3 class="text-white font-bold text-lg mb-1">Крок другий</h3>
+        <p class="text-white/90 text-sm font-medium">Загадка чекає!</p>
+    </button>
+
+    <button onclick="go(2)" class="step-card group relative bg-amber-500 p-6 rounded-2xl shadow-lg text-left overflow-hidden">
+        <div class="absolute right-[-10px] bottom-[-10px] text-6xl opacity-20 group-hover:rotate-12 transition-transform">3️⃣</div>
+        <h3 class="text-white font-bold text-lg mb-1">Крок третій</h3>
+        <p class="text-white/90 text-sm">Код майже відгадано ;)</p>
+    </button>
+
+    <button onclick="go(3)" class="step-card group relative bg-rose-600 p-6 rounded-2xl shadow-lg text-left overflow-hidden">
+        <div class="absolute right-[-10px] bottom-[-10px] text-6xl opacity-20 group-hover:rotate-12 transition-transform">4️⃣</div>
+        <h3 class="text-white font-bold text-lg mb-1">Фінальний ривок</h3>
+        <p class="text-white/90 text-sm">Крайній челенж...</p>
+    </button>
+
+  </div>
+
+  <p class="mt-12 text-gray-500 text-sm italic">Знайди всі цифри, щоб отримати доступ до подарунка</p>
+
+  <script>
+    function go(index) {
+      // Тут твоя логіка переходів, наприклад:
+      const pages = ['hint1.html', 'hint2.html', 'hint3.html', 'hint4.html'];
+      window.location.href = pages[index];
+    }
+
+  </script>
+</body>
+</html>

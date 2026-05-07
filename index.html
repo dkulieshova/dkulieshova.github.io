@@ -1,12 +1,24 @@
 <!DOCTYPE html>
-<html lang="fr" vocab="http://schema.org/" typeof="WebPage">
+<html lang="uk">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title id="page-title" property="name">Language Switcher Example</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login 💖</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="script.js"></script>
 </head>
-<body>
+<body class="bg-gradient-to-br from-pink-100 to-purple-200 h-screen flex items-center justify-center">
 
+  <div class="bg-white p-8 rounded-2xl shadow-2xl w-80 text-center">
+    <h1 class="text-2xl font-bold mb-4">Секретний доступ</h1>
+      <div class="relative">
+        <input id="password" type="password" class="w-full p-2 pr-10 border rounded mb-4" />
+        <img src="images/moustache.png" alt="вуса"  onclick="togglePassword()" class="absolute right-3 top-1/3 -translate-y-1/2 cursor-pointer" style="width:60px; height:30px;">
+      </div>
+    <button onclick="login()"
+      class="w-full bg-pink-500 text-white py-2 rounded hover:bg-pink-600 transition">
+      Увійти
+    </button>
+  </div>
 </body>
 </html>

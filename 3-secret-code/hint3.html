@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Шифр елементів 🧪</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@700&family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+  
+  <style>
+    body { font-family: 'Montserrat', sans-serif; }
+    .code-font { font-family: 'JetBrains Mono', monospace; }
+    
+    .cipher-container {
+      background: rgba(15, 23, 42, 0.8);
+      backdrop-filter: blur(12px);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+    }
+
+    .neon-text {
+        color: #fff;
+        text-shadow: 0 0 10px rgba(99, 102, 241, 0.8), 0 0 20px rgba(99, 102, 241, 0.4);
+        
+        /* Цей рядок забороняє перенос тексту */
+        white-space: nowrap; 
+        
+        /* Додаємо автоматичне зменшення шрифту, якщо рядок все одно завеликий */
+        font-variant-numeric: tabular-nums;
+    }
+  </style>
+</head>
+
+<body class="bg-gradient-to-tr from-slate-900 via-indigo-950 to-slate-900 min-h-screen flex items-center justify-center p-6 text-white">
+
+  <div class="max-w-2xl w-full text-center">
+    
+    <h1 class="text-sm uppercase tracking-[0.5em] text-indigo-400 mb-8 opacity-70">Третє випробування: Містична загадка</h1>
+
+    <div class="cipher-container p-8 md:p-12 rounded-[40px] shadow-2xl mb-10 overflow-hidden">
+        <div class="code-font neon-text text-[4vw] sm:text-2xl md:text-4xl">
+        10 92 9 — 15 39 85
+        </div>
+    </div>
+
+    <p class="text-indigo-200/60 mb-12 italic">Знайди логіку в числах, інакше замок залишиться закритим...</p>
+
+    <div class="flex flex-col sm:flex-row gap-4 justify-center">
+      <button onclick="showHint()" 
+        class="bg-white/10 hover:bg-white/20 border border-white/20 text-white px-8 py-4 rounded-2xl transition-all flex items-center justify-center gap-2">
+        <span>Потрібна допомога?</span>
+        <span class="text-xl">💡</span>
+      </button>
+
+      <button onclick="goNext()" 
+        class="bg-indigo-600 hover:bg-indigo-700 text-white px-8 py-4 rounded-2xl transition-all shadow-lg shadow-indigo-500/30">
+        Назад до замка 🔐
+      </button>
+    </div>
+  </div>
+
+  <div id="hintModal" class="fixed inset-0 bg-white/30 backdrop-blur-xl hidden items-center justify-center z-50 p-4">
+    <div class="bg-white p-4 rounded-3xl max-w-4xl w-full relative overflow-hidden">
+      
+      <button onclick="hideHint()" class="absolute top-4 right-4 bg-slate-200 hover:bg-slate-300 rounded-full p-2 text-slate-800 transition-colors">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+      </button>
+
+      <h2 class="text-slate-800 text-xl font-bold mb-4 text-center">Можливо, ці номери — це не просто числа?</h2>
+
+    <div class="rounded-xl overflow-hidden border border-slate-200 w-3/4 mx-auto">
+        <img src="../images/table.jpg" alt="Таблиця Менделеєва" class="w-full h-auto">
+    </div>
+
+    </div>
+  </div>
+
+  <script>
+    function showHint() {
+      const modal = document.getElementById('hintModal');
+      modal.classList.remove('hidden');
+      modal.classList.add('flex');
+    }
+
+    function hideHint() {
+      const modal = document.getElementById('hintModal');
+      modal.classList.remove('flex');
+      modal.classList.add('hidden');
+    }
+
+    function goNext() {
+        window.location.href = 'code-lock.html'
+    }
+  </script>
+</body>
+</html>

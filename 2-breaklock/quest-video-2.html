@@ -31,16 +31,33 @@
   const video = document.getElementById("video1");
   const nextBtn = document.getElementById("nextBtn");
 
+  let isSecondVideo = false;
+
   video.onended = function () {
-    nextBtn.classList.remove("hidden");
+    if (!isSecondVideo) {
+      nextBtn.classList.remove("hidden");
+    }
   };
 
   function playNextVideo() {
+    isSecondVideo = true;
+
     video.querySelector("source").src = "../videos/3.mp4";
+
     video.load();
     video.play();
+
     nextBtn.classList.add("hidden");
   }
+
+  video.addEventListener("timeupdate", function () {
+
+    if (isSecondVideo && video.currentTime >= 95) {
+      video.pause();
+      isSecondVideo = false;
+      goNext();
+    }
+  });
 </script>
   
 </div>
